@@ -1,7 +1,10 @@
 from random import randint
-num_1 = set(randint(1,20) for i in range(int(input('Введите количество элементов = '))))
+n1 = int(input('Введите количество элементов = '))
+num_1 = set(randint(0,5) for i in range(n1))
 print(num_1)
-num_2 = set(randint(1,20) for i in range(int(input('Введите количество элементов = '))))
-print(num_2)            
+n2 = int(input('Введите количество элементов = '))
+num_2 = set(randint(0,5) for i in range(n2))
+print(num_2)        
+print()    
 sor_num = sorted(num_1.intersection(num_2))
 print(sor_num)
